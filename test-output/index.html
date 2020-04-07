@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>D:\latbatchcoz\Framework\Actitime\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">13 methods,   13 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestScripts.Acti_createcustomer_test" hash-for-method="createcust(c40, d1, ok)">createcust(c40, d1, ok)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestScripts.Acti_createcustomer_test" hash-for-method="createcust(c44, d5, ok)">createcust(c44, d5, ok)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestScripts.Acti_createcustomer_test" hash-for-method="createcust(c46, d7, ok)">createcust(c46, d7, ok)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestScripts.Acti_user_test" hash-for-method="createcust(CreateUser{JinaaJinuSaharika298364.0H9.738654752E9pavanyenigi04@gmail.com9.364585236E9Yesnull})">createcust(CreateUser{JinaaJinuSaharika298364.0H9.738654752E9pavanyenigi04@gmail.com9.364585236E9Yesnull})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestScripts.Acti_createcustomer_test" hash-for-method="createcust(c45, d6, ok)">createcust(c45, d6, ok)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestScripts.Acti_createcustomer_test" hash-for-method="createcust(c41, d2, ok)">createcust(c41, d2, ok)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestScripts.Acti_createcustomer_test" hash-for-method="createcust(c47, d8, ok)">createcust(c47, d8, ok)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestScripts.Acti_createcustomer_test" hash-for-method="createcust(c48, d9, ok)">createcust(c48, d9, ok)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestScripts.Acti_user_test" hash-for-method="createcust(CreateUser{PoojaaPoojaPooj165685.0A1.23456789E9jyon@mail.com9.762468624E9Yesnull})">createcust(CreateUser{PoojaaPoojaPooj165685.0A1.23456789E9jyon@mail.com9.762468624E9Yesnull})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestScripts.Acti_createcustomer_test" hash-for-method="createcust(c42, d3, ok)">createcust(c42, d3, ok)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestScripts.Acti_createcustomer_test" hash-for-method="createcust(c43, d4, ok)">createcust(c43, d4, ok)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestScripts.Acti_user_test" hash-for-method="createcust(CreateUser{RanjithaaRanjithaRanju542132.0M8.79238781E9sachinrulz@gmail.com7.963131321E9Yesnull})">createcust(CreateUser{RanjithaaRanjithaRanju542132.0M8.79238781E9sachinrulz@gmail.com7.963131321E9Yesnull})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestScripts.Acti_userexp_test" hash-for-method="usexp">usexp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestScripts.Acti_user_test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createcust(CreateUser{JinaaJinuSaharika298364.0H9.738654752E9pavanyenigi04@gmail.com9.364585236E9Yesnull})">
+                  </a> <!-- createcust(CreateUser{JinaaJinuSaharika298364.0H9.738654752E9pavanyenigi04@gmail.com9.364585236E9Yesnull}) -->
+                  <span class="method-name">createcust</span>
+                  <span class="parameters">(CreateUser{JinaaJinuSaharika298364.0H9.738654752E9pavanyenigi04@gmail.com9.364585236E9Yesnull})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createcust(CreateUser{PoojaaPoojaPooj165685.0A1.23456789E9jyon@mail.com9.762468624E9Yesnull})">
+                  </a> <!-- createcust(CreateUser{PoojaaPoojaPooj165685.0A1.23456789E9jyon@mail.com9.762468624E9Yesnull}) -->
+                  <span class="method-name">createcust</span>
+                  <span class="parameters">(CreateUser{PoojaaPoojaPooj165685.0A1.23456789E9jyon@mail.com9.762468624E9Yesnull})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createcust(CreateUser{RanjithaaRanjithaRanju542132.0M8.79238781E9sachinrulz@gmail.com7.963131321E9Yesnull})">
+                  </a> <!-- createcust(CreateUser{RanjithaaRanjithaRanju542132.0M8.79238781E9sachinrulz@gmail.com7.963131321E9Yesnull}) -->
+                  <span class="method-name">createcust</span>
+                  <span class="parameters">(CreateUser{RanjithaaRanjithaRanju542132.0M8.79238781E9sachinrulz@gmail.com7.963131321E9Yesnull})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestScripts.Acti_userexp_test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="usexp">
+                  </a> <!-- usexp -->
+                  <span class="method-name">usexp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestScripts.Acti_createcustomer_test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createcust(c40, d1, ok)">
+                  </a> <!-- createcust(c40, d1, ok) -->
+                  <span class="method-name">createcust</span>
+                  <span class="parameters">(c40, d1, ok)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createcust(c44, d5, ok)">
+                  </a> <!-- createcust(c44, d5, ok) -->
+                  <span class="method-name">createcust</span>
+                  <span class="parameters">(c44, d5, ok)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createcust(c46, d7, ok)">
+                  </a> <!-- createcust(c46, d7, ok) -->
+                  <span class="method-name">createcust</span>
+                  <span class="parameters">(c46, d7, ok)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createcust(c45, d6, ok)">
+                  </a> <!-- createcust(c45, d6, ok) -->
+                  <span class="method-name">createcust</span>
+                  <span class="parameters">(c45, d6, ok)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createcust(c41, d2, ok)">
+                  </a> <!-- createcust(c41, d2, ok) -->
+                  <span class="method-name">createcust</span>
+                  <span class="parameters">(c41, d2, ok)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createcust(c47, d8, ok)">
+                  </a> <!-- createcust(c47, d8, ok) -->
+                  <span class="method-name">createcust</span>
+                  <span class="parameters">(c47, d8, ok)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createcust(c48, d9, ok)">
+                  </a> <!-- createcust(c48, d9, ok) -->
+                  <span class="method-name">createcust</span>
+                  <span class="parameters">(c48, d9, ok)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createcust(c42, d3, ok)">
+                  </a> <!-- createcust(c42, d3, ok) -->
+                  <span class="method-name">createcust</span>
+                  <span class="parameters">(c42, d3, ok)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createcust(c43, d4, ok)">
+                  </a> <!-- createcust(c43, d4, ok) -->
+                  <span class="method-name">createcust</span>
+                  <span class="parameters">(c43, d4, ok)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\latbatchcoz\Framework\Actitime\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;test name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestScripts.Acti_user_test&quot;/&gt;
+      &lt;class name=&quot;TestScripts.Acti_createcustomer_test&quot;/&gt;
+      &lt;class name=&quot;TestScripts.Acti_userexp_test&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(13);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'createcust')
+data.setCell(0, 2, 'TestScripts.Acti_createcustomer_test')
+data.setCell(0, 3, 54810);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'createcust')
+data.setCell(1, 2, 'TestScripts.Acti_createcustomer_test')
+data.setCell(1, 3, 40986);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'createcust')
+data.setCell(2, 2, 'TestScripts.Acti_createcustomer_test')
+data.setCell(2, 3, 36132);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'createcust')
+data.setCell(3, 2, 'TestScripts.Acti_user_test')
+data.setCell(3, 3, 35255);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'createcust')
+data.setCell(4, 2, 'TestScripts.Acti_createcustomer_test')
+data.setCell(4, 3, 30360);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'createcust')
+data.setCell(5, 2, 'TestScripts.Acti_user_test')
+data.setCell(5, 3, 29759);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'createcust')
+data.setCell(6, 2, 'TestScripts.Acti_createcustomer_test')
+data.setCell(6, 3, 27466);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'createcust')
+data.setCell(7, 2, 'TestScripts.Acti_user_test')
+data.setCell(7, 3, 23352);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'createcust')
+data.setCell(8, 2, 'TestScripts.Acti_createcustomer_test')
+data.setCell(8, 3, 21808);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'createcust')
+data.setCell(9, 2, 'TestScripts.Acti_createcustomer_test')
+data.setCell(9, 3, 21444);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'usexp')
+data.setCell(10, 2, 'TestScripts.Acti_userexp_test')
+data.setCell(10, 3, 17754);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'createcust')
+data.setCell(11, 2, 'TestScripts.Acti_createcustomer_test')
+data.setCell(11, 3, 14943);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'createcust')
+data.setCell(12, 2, 'TestScripts.Acti_createcustomer_test')
+data.setCell(12, 3, 14103);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 6 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestScripts.Acti_user_test</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">Acti_Setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Launch</span>
+                <span class="method-start">37654 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createcust(CreateUser{RanjithaaRanjithaRanju542132.0M8.79238781E9sachinrulz@gmail.com7.963131321E9Yesnull})</span>
+                <span class="method-start">46408 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">81675 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Acti_Setup</span>
+                <span class="method-start">84423 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Launch</span>
+                <span class="method-start">97903 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createcust(CreateUser{JinaaJinuSaharika298364.0H9.738654752E9pavanyenigi04@gmail.com9.364585236E9Yesnull})</span>
+                <span class="method-start">107307 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">137069 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Acti_Setup</span>
+                <span class="method-start">140340 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Launch</span>
+                <span class="method-start">157676 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createcust(CreateUser{PoojaaPoojaPooj165685.0A1.23456789E9jyon@mail.com9.762468624E9Yesnull})</span>
+                <span class="method-start">163463 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">186818 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestScripts.Acti_createcustomer_test</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">Acti_Setup</span>
+                <span class="method-start">192929 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Launch</span>
+                <span class="method-start">206472 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createcust(c40, d1, ok)</span>
+                <span class="method-start">211930 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">266743 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Acti_Setup</span>
+                <span class="method-start">274926 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Launch</span>
+                <span class="method-start">296976 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createcust(c41, d2, ok)</span>
+                <span class="method-start">331879 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">368015 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Acti_Setup</span>
+                <span class="method-start">374115 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Launch</span>
+                <span class="method-start">389679 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createcust(c42, d3, ok)</span>
+                <span class="method-start">402053 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">423502 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Acti_Setup</span>
+                <span class="method-start">429565 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Launch</span>
+                <span class="method-start">442267 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createcust(c43, d4, ok)</span>
+                <span class="method-start">449233 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">476703 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Acti_Setup</span>
+                <span class="method-start">487454 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Launch</span>
+                <span class="method-start">505053 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createcust(c44, d5, ok)</span>
+                <span class="method-start">527956 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">558322 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Acti_Setup</span>
+                <span class="method-start">564786 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Launch</span>
+                <span class="method-start">585577 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createcust(c45, d6, ok)</span>
+                <span class="method-start">594169 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">609114 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Acti_Setup</span>
+                <span class="method-start">609772 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Launch</span>
+                <span class="method-start">624925 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createcust(c46, d7, ok)</span>
+                <span class="method-start">626837 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">667845 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Acti_Setup</span>
+                <span class="method-start">670036 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Launch</span>
+                <span class="method-start">683170 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createcust(c47, d8, ok)</span>
+                <span class="method-start">688545 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">710358 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Acti_Setup</span>
+                <span class="method-start">715724 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Launch</span>
+                <span class="method-start">726977 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createcust(c48, d9, ok)</span>
+                <span class="method-start">728696 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">742803 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestScripts.Acti_userexp_test</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">Acti_Setup</span>
+                <span class="method-start">745093 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Launch</span>
+                <span class="method-start">752982 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">usexp</span>
+                <span class="method-start">758922 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">776679 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="TestScripts.Acti_userexp_test">
+        <methods>
+          <include name="usexp"/>
+          <include name="Acti_Setup"/>
+          <include name="close"/>
+          <include name="Launch"/>
+        </methods>
+      </class> <!-- TestScripts.Acti_userexp_test -->
+      <class name="TestScripts.Acti_createcustomer_test">
+        <methods>
+          <include name="createcust"/>
+        </methods>
+      </class> <!-- TestScripts.Acti_createcustomer_test -->
+      <class name="TestScripts.Acti_user_test">
+        <methods>
+          <include name="createcust"/>
+        </methods>
+      </class> <!-- TestScripts.Acti_user_test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
