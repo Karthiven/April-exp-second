@@ -8,8 +8,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import Base.basetwo;
+import Utility.Properties;
 
 public class Amsignemail extends basetwo{
+	
+	
 	
 
 
@@ -29,6 +32,9 @@ public class Amsignemail extends basetwo{
 	@FindBy(id="continue")
 	private WebElement continuebutton;
 	
+	
+	
+	
 	public WebElement getemail()
 	{
 		return email;
@@ -38,5 +44,12 @@ public class Amsignemail extends basetwo{
 	{
 		return continuebutton;
 	}
+	
+	public void setemail(String usname) throws IOException
+	{
+		email.sendKeys(usname);
+	}
+	
+
 
 }

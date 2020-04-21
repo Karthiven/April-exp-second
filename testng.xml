@@ -4,9 +4,8 @@
   <test name="Test">
     <classes>
       
-      <class name="TestScripts.Acti_user_test"/>
-      <class name="TestScripts.Acti_createcustomer_test"/>
-      <class name="TestScripts.Acti_userexp_test"/>
+      <class name="Amtest"/>
+      
    
     </classes>
   </test> <!-- Test -->

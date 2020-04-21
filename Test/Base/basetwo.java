@@ -1,5 +1,6 @@
 package Base;
 
+import java.io.File;
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
@@ -8,7 +9,13 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 import PageFactory.Acti_Login;
 import Pf.Amsignemail;
@@ -18,13 +25,16 @@ import Utility.Wait;
 
 public class basetwo { 
 	
+	public static ExtentReports extent;
+	public static ExtentTest logger;
+	
 	public static WebDriver driver=null;
 	Amsignemail empage;
 	Amsignpass pwpage;
 	
 	
 	
-	public void Acti_Setup() throws IOException, InterruptedException
+	public void Acti_Setup() throws IOException, InterruptedException  //Loading chrome driver setup
 	{
 		
 		Properties prop=new Properties("Envirnoment");
@@ -55,37 +65,60 @@ public class basetwo {
 	}
 	
 	
-	@BeforeMethod
+	@BeforeTest                                                //Report generation setup
+	public void startReport()
+	{
+		extent=new ExtentReports("./Reports/a.html", true);
+		
+		extent.addSystemInfo("Host Name", "Karthi test").
+		addSystemInfo("Environment", "Automation Testing").
+		addSystemInfo("User Name ", "First Test");
+		
+		extent.loadConfig(new File("./extent-config.xml"));
+	}
+	
+	
+
+	
+	@BeforeMethod                                                  //Login with un and pwd
 	public void Launch() throws IOException, InterruptedException
 	{
 		
-		Acti_Setup();
+		Acti_Setup(); // setups being loaded
 		
 		Properties prop=new Properties("data2");
-		driver.get(prop.getdata("url"));
+		driver.get(prop.getdata("url"));         // launching url
 	
-		
+		//enter email and click on continue
+		 
 		 empage= new Amsignemail();
-		 empage.getemail().sendKeys(prop.getdata("username"));
+		 empage.setemail(prop.getdata("username"));  //method written in page to set email
 		 empage.getbut().click();
 		 
+		//enter password and click on login 
+		 
 		 pwpage=new Amsignpass();
-		 pwpage.getpass().sendKeys(prop.getdata("password"));
+		 pwpage.getpass().sendKeys(prop.getdata("password"));  // directly entering pw here
 		 pwpage.getinbut().click();
 		 
 		 
-		
-		
-
 	}
 	
 	
 	
-	@AfterMethod
+	@AfterMethod         //close the browser
 	public void close()
 	{
 		driver.close();
 	}
+	
+	
+	@AfterTest          // push the report logs
+	public void endreport()
+	{
+		extent.flush();
+	}
+	
 	
 
 
