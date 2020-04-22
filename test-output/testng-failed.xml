@@ -6,6 +6,9 @@
       <class name="TestScripts.Amtest">
         <methods>
           <include name="Launch"/>
+          <include name="startReport"/>
+          <include name="close"/>
+          <include name="endreport"/>
           <include name="m1"/>
         </methods>
       </class> <!-- TestScripts.Amtest -->
