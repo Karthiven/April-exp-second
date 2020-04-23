@@ -4,10 +4,14 @@ import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.By.ByXPath;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -21,6 +25,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import PageFactory.Acti_Login;
 import Pf.Amsignemail;
 import Pf.Amsignpass;
+import Utility.MKD;
 import Utility.Properties;
 import Utility.Wait;
 
@@ -116,9 +121,24 @@ public class basetwo {
 		
 		Properties prop=new Properties("data2");
 		driver.get(prop.getdata("url"));         // launching url
+		
+		
+		
+		WebElement drop=driver.findElement(By.xpath("(//span[text()='Account & Lists']/parent::a/descendant::span)[3]"));
+		
+		MKD.mousemove(drop);
+		
+		doWaitSec(WAIT_SEC_3);
+		
+		WebElement sig=drop.findElement(By.xpath("(//span[text()='Sign in' and @class='nav-action-inner'] )[1]"));
+		MKD.mousemoveclick(sig);
+		
+		
+		
+		
 	
 		//enter email and click on continue
-		 
+		
 		 empage= new Amsignemail();
 		 empage.setemail(prop.getdata("username"));  //method written in page to set email
 		 empage.getbut().click();

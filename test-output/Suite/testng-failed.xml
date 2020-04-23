@@ -3,24 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="TestScripts.Acti_userexp_test">
+      <class name="TestScripts.cmslandtestandlinkverify">
         <methods>
-          <include name="usexp"/>
-          <include name="Acti_Setup"/>
           <include name="close"/>
           <include name="Launch"/>
+          <include name="startReport"/>
+          <include name="verifymedialink"/>
+          <include name="endreport"/>
         </methods>
-      </class> <!-- TestScripts.Acti_userexp_test -->
-      <class name="TestScripts.Acti_createcustomer_test">
-        <methods>
-          <include name="createcust"/>
-        </methods>
-      </class> <!-- TestScripts.Acti_createcustomer_test -->
-      <class name="TestScripts.Acti_user_test">
-        <methods>
-          <include name="createcust"/>
-        </methods>
-      </class> <!-- TestScripts.Acti_user_test -->
+      </class> <!-- TestScripts.cmslandtestandlinkverify -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
