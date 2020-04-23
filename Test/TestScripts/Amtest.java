@@ -1,5 +1,6 @@
 package TestScripts;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.LogStatus;
@@ -18,13 +19,18 @@ public class Amtest extends basetwo {
 		
 		if(title.equals("Your Account"))
 		{
+		Assert.assertEquals(title,"Your Account", "title not same as");	
 		logger.log(LogStatus.PASS, "passed this test case");
 		}
 		
 		else
 		{
+			
+			Assert.assertEquals(title,"Your Account", "title not same as");
 			logger.log(LogStatus.FAIL,"wrong page landed on");
 		}
+		
+		doWaitSec(WAIT_SEC_5);
 		
 }
 	}

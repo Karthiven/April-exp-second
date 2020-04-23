@@ -1,33 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="34738" started-at="2020-04-20T10:44:48Z" finished-at="2020-04-20T10:45:23Z">
+  <suite name="Suite" duration-ms="143393" started-at="2020-04-23T13:57:01Z" finished-at="2020-04-23T13:59:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="34738" started-at="2020-04-20T10:44:48Z" finished-at="2020-04-20T10:45:23Z">
-      <class name="TestScripts.Amtest">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:TestScripts.Amtest@59494225]" name="startReport" is-config="true" duration-ms="456" started-at="2020-04-20T16:14:48Z" finished-at="2020-04-20T16:14:48Z">
+    <test name="Test" duration-ms="143393" started-at="2020-04-23T13:57:01Z" finished-at="2020-04-23T13:59:25Z">
+      <class name="TestScripts.cmslandtestandlinkverify">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:TestScripts.cmslandtestandlinkverify@6e1567f1]" name="startReport" is-config="true" duration-ms="315" started-at="2020-04-23T19:27:01Z" finished-at="2020-04-23T19:27:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="Launch()[pri:0, instance:TestScripts.Amtest@59494225]" name="Launch" is-config="true" duration-ms="26637" started-at="2020-04-20T16:14:48Z" finished-at="2020-04-20T16:15:15Z">
+        <test-method status="PASS" signature="Launch()[pri:0, instance:TestScripts.cmslandtestandlinkverify@6e1567f1]" name="Launch" is-config="true" duration-ms="44591" started-at="2020-04-23T19:27:02Z" finished-at="2020-04-23T19:27:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Launch -->
-        <test-method status="PASS" signature="m1()[pri:0, instance:TestScripts.Amtest@59494225]" name="m1" duration-ms="276" started-at="2020-04-20T16:15:15Z" finished-at="2020-04-20T16:15:15Z">
+        <test-method status="PASS" signature="verifylandingpage()[pri:0, instance:TestScripts.cmslandtestandlinkverify@6e1567f1]" name="verifylandingpage" duration-ms="57" started-at="2020-04-23T19:27:46Z" finished-at="2020-04-23T19:27:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- m1 -->
-        <test-method status="PASS" signature="close()[pri:0, instance:TestScripts.Amtest@59494225]" name="close" is-config="true" duration-ms="4167" started-at="2020-04-20T16:15:15Z" finished-at="2020-04-20T16:15:19Z">
+        </test-method> <!-- verifylandingpage -->
+        <test-method status="PASS" signature="close()[pri:0, instance:TestScripts.cmslandtestandlinkverify@6e1567f1]" name="close" is-config="true" duration-ms="1205" started-at="2020-04-23T19:27:46Z" finished-at="2020-04-23T19:27:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method status="PASS" signature="endreport()[pri:0, instance:TestScripts.Amtest@59494225]" name="endreport" is-config="true" duration-ms="3165" started-at="2020-04-20T16:15:19Z" finished-at="2020-04-20T16:15:23Z">
+        <test-method status="PASS" signature="Launch()[pri:0, instance:TestScripts.cmslandtestandlinkverify@6e1567f1]" name="Launch" is-config="true" duration-ms="44402" started-at="2020-04-23T19:27:48Z" finished-at="2020-04-23T19:28:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Launch -->
+        <test-method status="PASS" signature="verifymedialink()[pri:0, instance:TestScripts.cmslandtestandlinkverify@6e1567f1]" name="verifymedialink" duration-ms="3280" started-at="2020-04-23T19:28:32Z" finished-at="2020-04-23T19:28:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifymedialink -->
+        <test-method status="PASS" signature="close()[pri:0, instance:TestScripts.cmslandtestandlinkverify@6e1567f1]" name="close" is-config="true" duration-ms="1117" started-at="2020-04-23T19:28:35Z" finished-at="2020-04-23T19:28:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="Launch()[pri:0, instance:TestScripts.cmslandtestandlinkverify@6e1567f1]" name="Launch" is-config="true" duration-ms="44324" started-at="2020-04-23T19:28:36Z" finished-at="2020-04-23T19:29:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Launch -->
+        <test-method status="PASS" signature="verifypostlink()[pri:0, instance:TestScripts.cmslandtestandlinkverify@6e1567f1]" name="verifypostlink" duration-ms="2038" started-at="2020-04-23T19:29:21Z" finished-at="2020-04-23T19:29:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifypostlink -->
+        <test-method status="PASS" signature="close()[pri:0, instance:TestScripts.cmslandtestandlinkverify@6e1567f1]" name="close" is-config="true" duration-ms="320" started-at="2020-04-23T19:29:23Z" finished-at="2020-04-23T19:29:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="endreport()[pri:0, instance:TestScripts.cmslandtestandlinkverify@6e1567f1]" name="endreport" is-config="true" duration-ms="1697" started-at="2020-04-23T19:29:23Z" finished-at="2020-04-23T19:29:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endreport -->
-      </class> <!-- TestScripts.Amtest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- TestScripts.cmslandtestandlinkverify -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
